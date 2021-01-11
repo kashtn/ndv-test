@@ -47,7 +47,7 @@ async function getData() {
   favoritesRatesContainer.classList.add("hidden");
   loader.classList.add("visible");
 
-``  const response = await fetch(
+  const response = await fetch(
     "https://cors-anywhere.herokuapp.com/" +
       "http://www.cbr.ru/scripts/XML_daily.asp"
   );
