@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./converter.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+    <title>Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html">Back</a>
+      <h1 class="title">Converter</h1>
+      <div class="loader"></div>
+      <div class="converterContainer">
+        <div class="topConverter">
+          <p>From: <b>RUB</b></p>
+          <p>
+            To:
+            <select>
+              <option>Choose</option>
+            </select>
+          </p>
+        </div>
+        <div class="bottomConverter">
+          <input class="amount" type="text" placeholder="enter the amount" />
+          <br />
+          <button class="convertButton" type="submit">Convert</button>
+        </div>
+        <div class="historyDiv">
+          <h3>History :</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
