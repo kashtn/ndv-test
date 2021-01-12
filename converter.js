@@ -53,7 +53,6 @@ async function getData() {
   const result = await response.text();
   const XmlNode = new DOMParser().parseFromString(result, "text/xml");
   rates = xmlToJson(XmlNode).ValCurs.Valute;
-  console.log(rates);
 
   rates &&
     rates.forEach((rate) => {
@@ -83,7 +82,6 @@ amountInput.addEventListener("change", (e) => {
 
 let button = document.querySelector("button");
 button.addEventListener("click", () => {
-  console.log(rates, amount, currentCharCode);
   let historyDiv = document.querySelector(".historyDiv");
   historyDiv.classList.add("visible");
   let rateToConvert = rates.find((rate) => {
@@ -91,11 +89,9 @@ button.addEventListener("click", () => {
       return rate;
     }
   });
-  console.log(rateToConvert.Value);
   let valueToConvert = rateToConvert.Value.split(",").join(".");
   let result =
     Math.round((Number(amount) / Number(valueToConvert)) * 100) / 100;
-  console.log(Number(amount) / Number(valueToConvert));
   let resultDiv = document.createElement("div");
   converterContainer.appendChild(resultDiv);
   let resultAmount = document.createElement("p");
