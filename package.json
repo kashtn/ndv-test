@@ -1,0 +1,11 @@
+{
+  "name": "ndv-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kashtn/ndv-test.git",
+  "author": "IvanMusk <ivan070797@yandex.ru>",
+  "license": "MIT",
+  "scripts": {
+    "start": "open -a 'Google Chrome' src/index.html"
+  }
+}
