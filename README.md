@@ -5,8 +5,8 @@
 Launches the app
 
 ## Rates component:
-![screenshot](readme-assets/rates.png)
+![screenshot](readme-assets/ratesComponent.png)
 ## Converter component:
-![screenshot](readme-assets/converter.png)
+![screenshot](readme-assets/currenciesConverter.png)
 
 ##  Use with pleasure!
