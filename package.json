@@ -7,5 +7,6 @@
   "license": "MIT",
   "scripts": {
     "start": "open -a 'Google Chrome' src/index.html"
-  }
+  },
+  "dependencies": {}
 }
